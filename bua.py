@@ -33,7 +33,7 @@ for i in range(iteraciones):
 
 ##Marca renovar todos los libros
 driver.find_element_by_xpath("/html/body/div/table[4]/tbody/tr/td/form/table/tbody/tr[3]/td/input[2]").click()
-driver.find_element_by_xpath("/html/body/div/table[4]/tbody/tr/td/form/table/tbody/tr[8]/td/input[1]").click()
+driver.find_element_by_class_name("searchbutton").click()
 
 email_body = "Los siguientes libros no se han podido renovar correctamente: \n\n" 
 send = False
